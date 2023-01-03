@@ -47,13 +47,13 @@ export function SignUp({ signInUser }) {
             type="text"
             name="name"
             placeholder="Name"
-            value={formik.values.email}
+            value={formik.values.name}
             onChange={formik.handleChange}
             onBlur={formik.handleBlur}
             disabled={formik.isSubmitting}
           />
-          {formik.touched.email && formik.errors.email && (
-            <span className="text-red-500 text-sm">{formik.errors.email}</span>
+          {formik.touched.name && formik.errors.name && (
+            <span className="text-red-500 text-sm">{formik.errors.name}</span>
           )}
         </div>
 
